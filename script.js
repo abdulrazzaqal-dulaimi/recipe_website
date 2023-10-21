@@ -21,3 +21,21 @@ function resetTheme() {
     body.style.backgroundColor = "#f4e8c1"; // Set the default background color
     header.style.backgroundColor = "#8a4b08"; // Set the header's background color to its default
 }
+
+// Get all recipe cards (articles) and their respective names and descriptions
+const recipeCards = document.querySelectorAll('.recipe-display article');
+const recipeNames = document.querySelectorAll('.recipe-name');
+const recipeDescriptions = document.querySelectorAll('.recipe-description');
+
+// Add click event listeners to each recipe card
+recipeCards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        // Hide all descriptions
+        recipeDescriptions.forEach(description => {
+            description.style.display = 'none';
+        });
+
+        // Show the description for the clicked recipe
+        recipeDescriptions[index].style.display = 'block';
+    });
+});
