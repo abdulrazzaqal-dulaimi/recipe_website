@@ -22,6 +22,7 @@ function resetTheme() {
     header.style.backgroundColor = "#8a4b08"; // Set the header's background color to its default
 }
 
+ 
 // Get all recipe cards (articles) and their respective names and descriptions
 const recipeCards = document.querySelectorAll('.recipe-display article');
 const recipeNames = document.querySelectorAll('.recipe-name');
