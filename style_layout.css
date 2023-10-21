@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+
 body.dark-theme {
     font-family: 'Poppins', sans-serif;
     background-color: #13f235;
@@ -14,6 +15,8 @@ body.dark-theme {
     margin: 0;
     padding: 0;
 }
+
+
 
 a {
     color: #8a4b08;
@@ -30,11 +33,13 @@ header {
     color: #f4e8c1;
     padding: 15px 30px;
 }
+
 header.dark-theme {
     background-color: #8a0869;
     color: #f4e8c1;
     padding: 15px 30px;
 }
+
 nav {
     text-align: center;
 }
@@ -78,7 +83,9 @@ article img {
 
 article p {
     font-size: 24px;
+
     text-align: center;
+
 }
 
 footer {
@@ -114,6 +121,9 @@ form button {
     border-radius: 5px;
 }
 
+article p {
+    text-align: center;
+}
 
 
 /* Media Queries */
@@ -133,4 +143,3 @@ form button {
         margin: 20px auto;
     }
 }
-__
